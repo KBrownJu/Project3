@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>My Story With Art And Design</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div data-layer="58582f07-7765-4e23-96eb-a93ab7d42f61" class="web19201">
+
+        <div class="qiwenJu">QIWEN JU</div>
+        <div class="T1">My Story With Art And Design</div>
+        <div class="x199501">1995</div>
+        <div class="x200201">2002</div>
+        <div class="x200701">2007</div>
+        <div class="x201301">2013</div>
+        <div class="x201701">2017</div>
+        <div class="x201901">2019</div>
+        <div class="T2">My name is Qiwen Ju.<br />I was born in Beijing, China.<br />The year of the dog.<br /><br />Because my father is a huge fan of movie,<br />so I started to watch a lot of animation since I was a kid.<br /></div>
+        <div class="x199502">1995</div>
+        <div class="x200202">2002</div>
+        <div class="T3">In 2002, I started to learn painting and calligraphy.</div>
+        <div class="x200203">2002</div>
+        <div class="x200703">2007</div>
+        <div class="x200704">2007</div>
+        <div class="x201304">2013</div>
+        <div class="T4">After 5 years training, I <br />won the first place in the <br />national calligraphy and <br />painting competition.</div>
+        <div class="x201305">2013</div>
+        <div class="x201705">2017</div>
+        <div class="T5">I went to Purdue University, and my <br />major was Fine Arts.<br /><br />I spent 4 years on printmaking and <br />graphic design.</div>
+        <div class="x201706">2017</div>
+        <div class="x201906">2019</div>
+        <div class="T6">After I graduated from Purdue University, I <br />backed to Beijing and worked 2 years.<br /><br />I joined a film production company and I took <br />charged of designing concept posters and <br />publicity materials.<br /><br />Also designed and managed the storyboard of <br />film production and assisted with short film clips.</div>
+        <div class="x201907">2019</div>
+        <div class="T7">I came to RISD for graduate program.</div>
+        <svg class="x1"><path d="M 0 0 L 0 1080"  /></svg>
+        <svg class="x2"><path d="M 0 0 L 0 1080"  /></svg>
+        <svg class="x3"><path d="M 0 0 L 0 1080"  /></svg>
+        <svg class="x4"><path d="M 0 0 L 0 1080"  /></svg>
+        <svg class="x5"><path d="M 0 0 L 0 1080"  /></svg>
+        <svg class="x6"><path d="M 0 0 L 0 1080"  /></svg>
+
+        </div>
+        <script src="assets/jquery.min.js"></script>
+        <script type="text/javascript">
+            $("html,body").animate({scrollLeft:0},100);
+            // move
+            function scrollTo(ele, speed) {
+
+                if(!speed) {
+                    speed = 300;
+                }
+
+                if(!ele) {
+                    $("html,body").animate({scrollLeft: 0}, speed);
+                } else {
+                    if(ele.length > 0) {
+                        $("html,body").animate({scrollLeft: $(ele).offset().left}, speed);
+                    }
+                }
+
+                return false;
+            }
+
+            $(function() {
+
+                // click 1995
+                $('.x199501').click(function() {
+                    scrollTo('.x1');
+                })
+                // click 2002
+                $('.x200201,.x200202').click(function() {
+
+                    scrollTo('.x2');
+                })
+                // click 2007
+                $('.x200701,.x200703').click(function() {
+
+                    scrollTo('.x3');
+                })
+                // click 2013
+                $('.x201301,.x201304').click(function() {
+
+                    scrollTo('.x4');
+                })
+                // click 2017
+                $('.x201701,.x201705').click(function() {
+
+                    scrollTo('.x5');
+                })
+                // click 2019
+                $('.x201901,.x201906').click(function() {
+                    scrollTo('.x6');
+                })
+
+                // back 1995
+                $('.x199502').click(function() {
+                    scrollTo();
+                })
+                // back 2002
+                $('.x200203').click(function() {
+                    scrollTo();
+                })
+                // back 2007
+                $('.x200704').click(function() {
+                    scrollTo();
+                })
+                // back 2013
+                $('.x201305').click(function() {
+                    scrollTo();
+                })
+                // back 2017
+                $('.x201706').click(function() {
+                    scrollTo();
+                })
+                // back 2019
+                $('.x201907').click(function() {
+                    scrollTo();
+                })
+
+
+
+            })
+        </script>
+
+
+    </body>
+    </html>
